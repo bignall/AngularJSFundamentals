@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="large-12 columns">
+    
+    <h2>Animals</h2>
+
+    <div class="row">
+      <div class="large-3 columns">
+	Search:
+	<input type="search" ng-model="animalquery" 
+	       placeholder="Enter a search string"/>
+      </div>
+    </div>
+    
+    <animal 
+       ng-repeat="animal in animals | filter: animalquery"
+       info="animal">
+    </animal>
+    
+  </div>
+</div>

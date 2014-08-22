@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="ranch">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/app.css"/>
+    <link rel="stylesheet" href="/css/foundation.min.css"/>
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/angular-resource.min.js"></script>
+    <script src="app.js"></script>
+    <script src="animal/animal-directive.js"></script>
+    <script src="animal/animal-service.js"></script>
+    <script src="animal/animal-controller.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script> --> 
+    <title>My Ranch</title>
+  </head>
+  <body id="myapp">
+    <a href="/step06" class="buttonbox">Step 6</a>
+
+    <ng-include src="'partials/header.html'"></ng-include>
+
+    <div class="row" ng-controller="animalCtrl">
+      <div class="large-12 columns">
+	
+	<animal 
+	   ng-repeat="animal in animals"
+	   info="animal">
+	</animal>
+
+    </div>
+
+  </body>
+</html>

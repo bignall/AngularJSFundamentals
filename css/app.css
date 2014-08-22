@@ -1,0 +1,18 @@
+#myapp h1 input {
+    display: none;
+}
+
+#myapp div:hover > h1 input {
+    display: inline-block;
+}
+
+.buttonbox {
+    float: right
+}
+
+div.image {
+    height: 175px;
+}
+div.description {
+    height: 30ex;
+}

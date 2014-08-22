@@ -1,0 +1,10 @@
+<div class="large-2 columns">
+  <div class="image"><img ng-src="{{animal.img}}"/></div>
+  <div class="description">
+    <p><strong>{{animal.name}}</strong> ({{ animal | genderName }})
+      - {{animal.species}} - {{animal.gender}} - {{animal.age}}
+      <span ng-show="animal.notes"> - Notes: {{animal.notes}}</span>
+    </p>
+  </div>
+</div>
+
